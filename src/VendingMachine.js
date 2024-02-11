@@ -1,16 +1,20 @@
 import React from 'react';
 import './App.css';
-import {BrowserRouter, Routes, Route} from "react-router-dom";
-import Chips from "./Chips.js";
-import Cookies from "./Cookies.js";
-import Poptarts from "./Poptarts.js";
+import {Link} from "react-router-dom";
 
 function VendingMachine() {
   return (
     <div>
-        <Chips />
-        <Cookies />
-        <Poptarts />
+        <h1>
+            <Link to="/chips">Chips</Link>
+        </h1>
+        <h1>
+            <Link to="/cookies">Cookies</Link>
+        </h1>
+        <h1>
+            <Link to="/poptarts">Poptarts</Link>
+        </h1>
+
     </div>
   );
 }
