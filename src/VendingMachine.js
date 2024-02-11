@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import {Link} from "react-router-dom";
+import VendingMachineGif from "./gifs/vending_machine.gif"
 
 function VendingMachine() {
   return (
@@ -14,7 +15,7 @@ function VendingMachine() {
         <h1>
             <Link to="/poptarts">Poptarts</Link>
         </h1>
-
+        <img src={VendingMachineGif} alt="Vending Machine Gif" />
     </div>
   );
 }
